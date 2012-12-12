@@ -28,7 +28,7 @@ requests:
     value_prop_feedback: 4320
   questions:
     retweet:
-      - "What is the link to the tweet you'd like others to re-tweet? ex: https://twitter.com/nreduce/status/274112721451102208"
+      - "Enter the URL of the tweet you would like to have Retweeted:"
     hn_upvote:
       - "What is the link to the HN Post? ex: http://news.ycombinator.com/item?id=4887575"
     ui_ux_feedback:
