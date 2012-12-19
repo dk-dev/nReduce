@@ -17,10 +17,10 @@ client:
 
 requests:
   prices:
-    retweet: 1
-    hn_upvote: 2
-    ui_ux_feedback: 5
-    value_prop_feedback: 20
+    retweet: [1, 100, 'Followers']
+    hn_upvote: [2, 1, 'Upvotes']
+    ui_ux_feedback: [5, 1, 'Usability Tests']
+    value_prop_feedback: [20, 1, 'Target Customers']
   expire_in_minutes:
     retweet: 30
     hn_upvote: 30
@@ -28,21 +28,15 @@ requests:
     value_prop_feedback: 4320
   questions:
     retweet:
-      - "Enter the URL of the tweet you would like to have Retweeted:"
+      - ["Enter the URL of the tweet you would like to have Retweeted:", 'string', 'https://twitter.com/nReduce/status/274112721451102208']
     hn_upvote:
-      - "What is the link to the HN Post? ex: http://news.ycombinator.com/item?id=4887575"
+      - ["What is the link to the HN Post? ex: http://news.ycombinator.com/item?id=4887575", 'string']
     ui_ux_feedback:
-      - "What is the URL for the feature, product or prototype you'd like to be tested?"
-      - "Instructions"
-      - "Task #1"
-      - "Task #2"
-      - "Task #3"
-      - "Question #1"
-      - "Question #2"
-      - "Question #3"
+      - ["URL", 'string']
+      - ["Instructions", 'text']
     value_prop_feedback:
-      - "What is your ideal customer for this value proposition? Be as specific as possible."
-      - "What is the URL that you would like to send the above customer to?"
+      - ["What is your ideal customer for this value proposition? Be as specific as possible.", 'string']
+      - ["What is the URL that you would like to send the above customer to?", 'string']
 
 industries:
   - "Advertising"
